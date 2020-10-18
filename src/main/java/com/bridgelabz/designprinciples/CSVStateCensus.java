@@ -6,10 +6,11 @@ import java.util.Iterator;
 import com.opencsv.CSVReader;
 
 public class CSVStateCensus {
-	public int CSVStateCensusLoader() throws Exception {
+
+	public int CSVStateCensusLoader(String csvFile) throws Exception {
 		// Instantiating the CSVReader class
 		CSVReader reader = new CSVReader(new FileReader(
-				"C:\\Users\\HP LAP\\Desktop\\BridgeLabz\\DesignPrinciples\\designprinciples\\IndiaStateCensusData.CSV"));
+				csvFile));
 		// Reading the contents of the csv file
 		StringBuffer buffer = new StringBuffer();
 		String line[];

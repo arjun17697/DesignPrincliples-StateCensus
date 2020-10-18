@@ -3,8 +3,9 @@ package com.bridgelabz.designprinciples;
 import java.util.Scanner;
 public class StateCensusAnalyser 
 {
+	private static final String CSV_FILE = "C:\\Users\\HP LAP\\Desktop\\BridgeLabz\\DesignPrinciples\\designprinciples\\IndiaStateCensusData.CSV";
 	private static void loadStateCensus() throws Exception {
-		new CSVStateCensus().CSVStateCensusLoader();
+		new CSVStateCensus().CSVStateCensusLoader(CSV_FILE);
 	}
     public static void main( String[] args ) throws Exception
     {
