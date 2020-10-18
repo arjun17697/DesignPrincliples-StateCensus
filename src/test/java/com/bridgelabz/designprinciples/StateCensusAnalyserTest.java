@@ -28,7 +28,7 @@ public class StateCensusAnalyserTest {
 	public void testThrowsExceptionWhenInvalidFileUsed() throws CensusException {
 		boolean thrown = false;
 		try {
-			new CSVStateCensus().CSVStateCensusLoader(CSV_FILE);
+			new CSVStateCensus().CSVStateCensusLoader(CSV_FILE_INCOR);
 		} catch (Exception e) {
 			thrown = true;
 			System.out.println("Provided file is incorrect.Please retry");
@@ -40,7 +40,7 @@ public class StateCensusAnalyserTest {
 	public void testThrowsExceptionWhenInvalidDelimiterUsed() {
 		boolean thrown = false;
 		try {
-			new CSVStateCensus().CSVStateCensusLoader(CSV_FILE);
+			new CSVStateCensus().CSVStateCensusLoader(CSV_FILE_DELIMITER);
 		} catch (Exception e) {
 			thrown = true;
 			System.out.println("Provided delimiter in file is incorrect.Please retry");
@@ -52,7 +52,7 @@ public class StateCensusAnalyserTest {
 	public void testThrowsExceptionWhenInvalidHeaderUsed() {
 		boolean thrown = false;
 		try {
-			new CSVStateCensus().CSVStateCensusLoader(CSV_FILE);
+			new CSVStateCensus().CSVStateCensusLoader(CSV_FILE_HEADER);
 		} catch (Exception e) {
 			thrown = true;
 			System.out.println("Provided header in file is incorrect.Please retry");
